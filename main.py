@@ -1,6 +1,9 @@
 import discord
 import random
-TOKEN='OTIxMjg1NDI1MzE2ODkyNjkz.Ybwr6g.Myu6BExCRQ3EI-AGNU-N1lmYSh8'
+import os
+from dotenv import load_dotenv
+load_dotenv()
+TOKEN=os.getenv('TOKEN')
 client=discord.Client()
 @client.event
 async def on_ready():
